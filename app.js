@@ -12,7 +12,7 @@ db.mongoose
     .connect(db.url, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: true
+        useFindAndMo: true
     })
     .then(() => {
         console.log('Database Connected!');
@@ -23,8 +23,6 @@ db.mongoose
 
 // PORT
 const PORT = 3000;
-
-//Middlewares
 
 // Routes
 app.get('/', (req, res) => {

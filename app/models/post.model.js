@@ -1,7 +1,8 @@
 module.exports = (mongoose) => {
     const schema = mongoose.Schema({
         title: String,
-        body: String,
+        subtitle: String,
+        imageURL : String,
         published: Boolean
     }, {
         timestamps: true
