@@ -1,9 +1,8 @@
 module.exports = (mongoose) => {
     const schema = mongoose.Schema({
         title: String,
-        subtitle: String,
-        imageURL : String,
-        published: Boolean
+        content: String,
+        place : String,
     }, {
         timestamps: true
     })
@@ -18,6 +17,6 @@ module.exports = (mongoose) => {
         return object;
     })
 
-    const Post = mongoose.model("posts", schema);
+    const Post = mongoose.model("notebook", schema);
     return Post;
 }
